@@ -1,6 +1,6 @@
 # WC Filter Migration #
 **Contributors:**      Bryan Headrick  
-**Donate link:**       https://catmanstudios.com  
+**Donate link:**       https://bryanheadrick.com  
 **Tags:**  
 **Requires at least:** 4.4  
 **Tested up to:**      4.8.1 
@@ -10,7 +10,7 @@
 
 ## Description ##
 
-Migrate from WC filters to Berocket filters
+Migrate from [Product Filters for WooCommerce](https://woocommerce.com/products/product-filters/) to [Berocket WC AJAX Product Filters](https://berocket.com/product/woocommerce-ajax-products-filter)
 
 ## Installation ##
 
@@ -21,13 +21,17 @@ Migrate from WC filters to Berocket filters
 
 ### Usage ###
 
-Create a filter in the style you want.
-run the cli command followed by the post id of the filter you created to model after.
+Create a checkbox filter in the style you want all filters to have.
+run the cli command followed by the post id of the filter you created to model after and then id of the filter group.
+This assumes only one filter group.
+
 example: 
-wp wc_filter_migration 434514
+wp wc_filter_migration {filter id} {group id}
 
-## Frequently Asked Questions ##
-
+## Limitations ##
+This was built for a fairly limited use case, so not all possible options will be migrated. 
+This was only tested against filters on product attributes and tags and the only display rules were for a single product 
+category id. This assumes a single product group from the source and destination. This will only migrate checkbox filters.
 
 ## Screenshots ##
 
