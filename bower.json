@@ -1,0 +1,18 @@
+{
+  "name": "wc-filter-migration",
+  "description": "Migrate from WC filters to Berocket filters",
+  "license": "GPLv2",
+  "authors": [
+    "Bryan Headrick"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}
